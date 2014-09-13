@@ -51,10 +51,10 @@ body {position:relative}
 .header .menu ul ul ul li {border:0}
 
 .extend {width:100%; height:54px; z-index:100; position:absolute; left:0; top:68px; background:url(../images/bg_00.png);}
-.extend .pager {position:relative;}
+.extend .pager {position:absolute;}
 .extend h1 {position:absolute; left:0; top:0; font-size:30px; font-weight:normal; line-height:54px; color:#fff}
 
-.extend .search {position:absolute; right:330px; top:16px; width:236px; height:23px; background:url(../images/search_bg.png) no-repeat}
+.extend .search { position:absolute; right:230px; top:16px; width:236px; height:23px; background:url(../images/search_bg.png) no-repeat}
 .extend .search input {vertical-align:top; border:0; outline:0; color:#ccc; background:transparent; margin:2px 0 0 10px; font-size:14px; padding:0}
 .extend .search select {position:absolute; width:0px; clip:rect(5px 98px 26px 80px)}
 .extend .search .select {background:url(../images/arrow_10.gif) no-repeat right center; position:absolute; top:2px; right:2px; width:80px; height:21px; line-height:19px;}
@@ -62,7 +62,7 @@ body {position:relative}
 .extend .search ul li a {color:#ccc; display:block; padding:0 10px}
 .extend .search ul li a:hover {color:#ccc; background:#000}
 
-.extend .navs {position:absolute; float:right; right:270px; margin:18px 10px 0 0; font-size:14px}
+.extend .navs {position:absolute; right:530px; margin:18px 10px 0 0; font-size:14px}
 .extend .navs li {display:inline; color:#fff}
 .extend .navs li.cart {background:url(../images/icon_cart.png) no-repeat 10px center; padding-left:46px; margin-left:10px; border-left:1px solid #aaa; font-size:12px}
 .extend .navs li.border {padding-left:13px; margin-left:10px; border-left:1px solid #aaa;}
@@ -555,5 +555,84 @@ select{border:0px;background-color: #d8d8d8;line-height:25px;width:240px;margin-
 .contact_info div {width:210px; height:200px; padding:40px 0 0 20px; float:left; background:#fff; text-align:left; color:#000}
 .contact_info iframe {width:230px; height:240px; float:right}
 
+.captionOrange, .captionBlack
+{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.captionOrange
+{
+    background: #EB5100;
+    background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack
+{
+	font-size:16px;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+a.captionOrange:hover
+{
+    color: #eb5100;
+    text-decoration: underline;
+    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+.bricon
+{
+    background: url(../images/browser-icons.png);
+}
+
+/*
+.jssorb01 div           (normal)
+.jssorb01 div:hover     (normal mouseover)
+.jssorb01 .av           (active)
+.jssorb01 .av:hover     (active mouseover)
+.jssorb01 .dn           (mousedown)
+*/
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av
+{
+    filter: alpha(opacity=70);
+    opacity: .7;
+    overflow:hidden;
+    cursor: pointer;
+    border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+/* jssor slider arrow navigator skin 05 css */
+/*
+.jssora05l              (normal)
+.jssora05r              (normal)
+.jssora05l:hover        (normal mouseover)
+.jssora05r:hover        (normal mouseover)
+.jssora05ldn            (mousedown)
+.jssora05rdn            (mousedown)
+*/
+.jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn
+{
+	position: absolute;
+	cursor: pointer;
+	display: block;
+    background: url(../images/a17.png) no-repeat;
+    overflow:hidden;
+}
+.jssora05l { background-position: -10px -40px; }
+.jssora05r { background-position: -70px -40px; }
+.jssora05l:hover { background-position: -130px -40px; }
+.jssora05r:hover { background-position: -190px -40px; }
+.jssora05ldn { background-position: -250px -40px; }
+.jssora05rdn { background-position: -310px -40px; }
 
 

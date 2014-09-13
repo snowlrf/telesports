@@ -11,6 +11,9 @@
 <script type="text/javascript" src="template/default/index/js/fancybox/jquery.fancybox.js"></script>
 <script type="text/javascript" src="template/default/index/js/script.js"></script>
 <script type="text/javascript" src="include/js/global.js"></script>
+<script type="text/javascript" src="template/default/index/js/jssor.core.js"></script>
+<script type="text/javascript" src="template/default/index/js/jssor.utils.js"></script>
+<script type="text/javascript" src="template/default/index/js/jssor.slider.js"></script>
 </head>
 <body>
 <div class="header_bg">
@@ -30,15 +33,14 @@
   </div>
 </div>
 <div class="extend png">
-  <div class="pager">
-  	<h1></h1>
+
     <div class="navs">
       <ul>
 	            <li class="first"><a href="">注册</a></li>
-        <li><a href="" class="iframe" id="user_login_a">登录</a></li>
+              <li><a href="" class="iframe" id="user_login_a">登录</a></li>
       </ul>
     </div>
-  </div>
+
   <div class="search">
       <input type="text" name="keyword" id="keyword" class="text" placeholder="search">
 	  <input type="hidden" name="classid" id="classid">
@@ -59,18 +61,53 @@
 	  </div-->
     </div>
 </div>
+<div class="nav" style="height: 610px; overflow: hidden;">
+  <div id="slider2_container" style="position: relative; width: 960px; margin: 0px auto; height: 400px;">
+      <!-- Loading Screen -->
+      <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+          <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+              background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+          </div>
+          <div style="position: absolute; display: block; background: url(../images/loading.gif) no-repeat center center;
+              top: 0px; left: 0px;width: 100%;height:100%;">
+          </div>
+      </div>
+      <!-- Slides Container -->
+      <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 960px; height: 400px; margin: 0px auto;
+          overflow: hidden;">
+          <div>
+              <a u=image href="#"><img src="template/default/index/images/1.jpg" /></a>
+          </div>
+          <div>
+              <a u=image href="#"><img src="template/default/index/images/2.jpg" /></a>
+          </div>
+          <!--div>
+              <a u=image href="#"><img src="../img/landscape/03.jpg" /></a>
+          </div>
+          <div>
+              <a u=image href="#"><img src="../img/landscape/05.jpg" /></a>
+          </div-->
+      </div>
+      
+      <!-- Bullet Navigator Skin Begin -->
+      <!-- jssor slider bullet navigator skin 01 -->
+      <!-- bullet navigator container -->
+      <div u="navigator" class="jssorb01" style="position: absolute; bottom: 16px; right: 10px;">
+          <!-- bullet navigator item prototype -->
+          <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
+      </div>
+      <!-- Bullet Navigator Skin End -->
+      
+      <!-- Arrow Navigator Skin Begin -->
 
-<div class="nav" style="height: 728px; overflow: hidden;">
-  <div class="banner">
-  	<div class="prev png" style="opacity: 0.6;"></div>
-    <ul style="left: 0px;">
-            <li style="width: 900px; background-image: url(template/default/index/images/1.jpg);" class="first"><a href="" target="_blank"></a></li>
-            <li style="width: 900px; background-image: url(template/default/index/images/2.jpg);"><a href="" target="_blank"></a></li>
-            <li style="width: 900px; background-image: url(template/default/index/images/1.jpg);" class="first"><a href="" target="_blank"></a></li>
-            <li style="width: 900px; background-image: url(template/default/index/images/2.jpg);"><a href="" target="_blank"></a></li>
-            
-          </ul>
-  	<div class="next png" style="opacity: 0.6;"></div>
+      <!-- Arrow Left -->
+      <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 163px; left: 8px;">
+      </span>
+      <!-- Arrow Right -->
+      <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 163px; right: 8px">
+      </span>
+      <!-- Arrow Navigator Skin End -->
+      <a style="display: none" href="http://www.jssor.com">jquery responsive slider</a>
   </div>
   <div class="float" style="height: 210px; overflow: hidden;">
     <ul class="png">
